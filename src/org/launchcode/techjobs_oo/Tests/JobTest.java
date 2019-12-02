@@ -49,10 +49,7 @@ public class JobTest {
                 new Location("Desert"), new PositionType("Quality control"),
                 new CoreCompetency("Persistence"));
 
-        int sameJobOneId = sameJobOne.getId();
-        int sameJobTwoId = sameJobTwo.getId();
-
-        assertEquals(false, sameJobOneId == sameJobTwoId);
+        assertEquals(false, sameJobOne.equals(sameJobTwo));
 
     }
 
